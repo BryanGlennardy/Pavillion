@@ -75,8 +75,9 @@
                     <!-- ============================================================== -->
                     <?php if (session()->get('log_sess')) { ?>
                         <li>
-                            <a class="profile-pic" href="#">
-                                <img src="<?= base_url(session()->get('foto')); ?>" alt="user-img" width="36" class="img-circle"><span class="text-white font-medium"><?= session()->get('nama'); ?></span></a>
+                        <a class="profile-pic" href="#">
+                            <!-- <img src="<?= base_url(session()->get('foto')); ?>" alt="user-img" width="36" class="img-circle"> -->
+                            <span class="text-white font-medium"><?= session()->get('nama'); ?></span></a>
                         </li>
                         <li>
                             <a href="<?= base_url('index/logoutUser'); ?>"><span class="text-white font-medium me-3">Logout</span></a>
